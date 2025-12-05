@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Criar item</h2>
+    <form action="/create" method="POST">
+        <input type="text" name="name" placeholder="Nome">
+        <button type="submit">Salvar</button>
+    </form>
+{% endblock %}

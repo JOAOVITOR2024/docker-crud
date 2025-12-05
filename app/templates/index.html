@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+    <a href="/create">Criar novo item</a>
+    <ul>
+        {% for item in items %}
+            <li>
+                {{ item.name }}
+                <a href="/edit/{{ item.id }}">Editar</a>
+                <a href="/delete/{{ item.id }}">Excluir</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
